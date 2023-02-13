@@ -1,0 +1,113 @@
+.header {
+  .top {
+    padding-block:  15px;
+    padding-inline: var(--padding-inline);
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0.73px 2px #00000080;
+    .logo {
+      margin-inline-start: 32px;
+    }
+    .ad {
+      margin-inline-start: 105px;
+      display: flex;
+      align-items: center;
+
+      div {
+        font-size: 14px;
+        margin-inline: 15px;
+        font-weight: 500;
+        a {
+          font-weight: 700;
+          text-decoration: underline;
+        }
+      }
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      a {
+        text-decoration: none;
+        margin-inline-start: 35px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+        img {
+          margin-inline-end: 10px;
+        }
+      }
+    }
+  }
+  .center{
+    padding-inline: var(--padding-inline);
+    padding-block: 13.6px;
+    display: flex;
+    align-items: center;
+    .searchInputContainer{
+      position: relative;
+      flex: 40%;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 16.3px;
+        translate: 0 -50%;
+      }
+      input{
+        padding: 15px 8.2px 15px 48.2px;
+        height: 48px;
+        width: 75%;
+        border: 0.5004362463951111px solid #D8D8D8;
+        border-radius: 24px;
+        font-weight: 600;
+
+        &:focus{
+          outline: none;
+        }
+        &::placeholder {
+          color: black;
+        
+        }
+      }
+    }
+    .vendorLogoContainer {
+      flex: 20%;
+      display: flex;
+      justify-content: center;
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .cartWishlistLogin {
+      flex: 40%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      button {
+        margin-inline-start: 32px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        img {
+          margin-inline-end: 8px;
+        }
+      }
+    }
+  }
+  .bottom {
+    padding-inline: var(--padding-inline);
+    padding-block: 15px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    :last-child {
+      color: #F11133;
+    }
+  }
+}
