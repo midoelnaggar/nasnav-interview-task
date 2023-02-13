@@ -1,5 +1,9 @@
-.breadcrumbs {
+.main {
 padding-inline: var(--padding-inline);
 padding-block: 30px;
-border-bottom: 1px solid #575756;
+border-bottom: 0.5px solid #575756;
+font-weight: 700;
+a {
+    text-decoration: underline;
+}
 }
