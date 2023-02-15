@@ -3,7 +3,7 @@ import styles from "@/styles/Home.module.scss";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { useState } from "react";
 
-export default function Home({ cart, setCart }) {
+export default function Home({ cart, setCart, setOpenCart }) {
   const [productCount, setProductCount] = useState(1);
 
   const handleDecrement = () => {
@@ -40,7 +40,8 @@ export default function Home({ cart, setCart }) {
      })
      setCart([found,...otherProducts])
     }
-    setProductCount(1)
+    setOpenCart(true);
+    setProductCount(1);
   };
 
   return (

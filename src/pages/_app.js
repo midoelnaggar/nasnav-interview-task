@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Header cart={cart} openCart={openCart} setOpenCart={setOpenCart} />
-      <Component cart={cart} setCart={setCart} {...pageProps} />
+      <Component cart={cart} setCart={setCart} setOpenCart={setOpenCart} {...pageProps} />
       <Footer />
       <Suspense>
         <Cart  cart={cart} setCart={setCart}  openCart={openCart} setOpenCart={setOpenCart} />
