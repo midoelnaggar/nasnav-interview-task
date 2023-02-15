@@ -26,7 +26,7 @@ export default function Home({ cart, setCart, setOpenCart }) {
         {
           id: "1001",
           name: "Lorem ipsum dolor sit amet, consecte adipiscing elit.",
-          image:"/images/static/productImage00.png",
+          image:"./images/static/productImage00.png",
           qty: productCount,
           price: 9999,
         },
