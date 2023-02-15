@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.top}>
         <div className={styles.start}>
-          <img src="/images/footerLogo.svg" alt="footerLogo" />
+          <img src="./images/footerLogo.svg" alt="footerLogo" />
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -33,7 +33,7 @@ const Footer = () => {
             <input placeholder="Enter Your Mail" />
             <button>
               Subscribe{" "}
-              <img src="/images/footerSubscribe.svg" alt="footerSubscribe" />
+              <img src="./images/footerSubscribe.svg" alt="footerSubscribe" />
             </button>
           </div>
           <div className={styles.links}>
@@ -49,19 +49,19 @@ const Footer = () => {
             <div className={styles.end}>
               <a href="">
                 {" "}
-                <img src="/images/fb.svg" alt="fb" /> /YESHTERY
+                <img src="./images/fb.svg" alt="fb" /> /YESHTERY
               </a>
               <a href="">
                 {" "}
-                <img src="/images/li.svg" alt="li" /> /YESHTERY
+                <img src="./images/li.svg" alt="li" /> /YESHTERY
               </a>
               <a href="">
                 {" "}
-                <img src="/images/ig.svg" alt="ig" /> /YESHTERY
+                <img src="./images/ig.svg" alt="ig" /> /YESHTERY
               </a>
               <a href="">
                 {" "}
-                <img src="/images/tw.svg" alt="tw" /> /YESHTERY
+                <img src="./images/tw.svg" alt="tw" /> /YESHTERY
               </a>
             </div>
           </div>
@@ -72,12 +72,12 @@ const Footer = () => {
           © 2021 yeshtery, all rights reserved.
         </div>
         <div className={styles.center}>
-          <img src="/images/cod.png" alt="cod" />
-          <img src="/images/visa.png" alt="visa" />
-          <img src="/images/mc.png" alt="mc" />
+          <img src="./images/cod.png" alt="cod" />
+          <img src="./images/visa.png" alt="visa" />
+          <img src="./images/mc.png" alt="mc" />
         </div>
         <div className={styles.end}>
-          Powered By <img src="/images/nasnav.png" alt="nasnav" />
+          Powered By <img src="./images/nasnav.png" alt="nasnav" />
         </div>
       </div>
     </footer>

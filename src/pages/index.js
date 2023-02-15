@@ -59,41 +59,41 @@ export default function Home({ cart, setCart, setOpenCart }) {
             <div className={styles.mainImage}>
               <img
                 className={styles.image}
-                src="/images/static/productImage00.png"
+                src="./images/static/productImage00.png"
                 alt="productImage00"
               />
               <button className={styles.display360}>
-                <img src="/images/display360.svg" alt="display360" />
+                <img src="./images/display360.svg" alt="display360" />
               </button>
             </div>
             <div className={styles.swiper}>
               <button>
                 <img
-                  src="/images/productArrowLeft.svg"
+                  src="./images/productArrowLeft.svg"
                   alt="productArrowLeft"
                 />
               </button>
               <div className={styles.smallImages}>
                 <img
-                  src="/images/static/productImage01.png"
+                  src="./images/static/productImage01.png"
                   alt="productImage01"
                 />
                 <img
-                  src="/images/static/productImage02.png"
+                  src="./images/static/productImage02.png"
                   alt="productImage02"
                 />
                 <img
-                  src="/images/static/productImage03.png"
+                  src="./images/static/productImage03.png"
                   alt="productImage03"
                 />
                 <img
-                  src="/images/static/productImage04.png"
+                  src="./images/static/productImage04.png"
                   alt="productImage04"
                 />
               </div>
               <button>
                 <img
-                  src="/images/productArrowRight.svg"
+                  src="./images/productArrowRight.svg"
                   alt="productArrowRight"
                 />
               </button>
@@ -101,7 +101,7 @@ export default function Home({ cart, setCart, setOpenCart }) {
           </div>
           <div className={styles.details}>
             <div className={styles.brand}>
-              <img src="/images/static/adidas.svg" alt="adidas" />
+              <img src="./images/static/adidas.svg" alt="adidas" />
             </div>
             <div className={styles.name}>
               Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer
@@ -112,31 +112,31 @@ export default function Home({ cart, setCart, setOpenCart }) {
               <div className={styles.stars}>
                 <button>
                   <img
-                    src="/images/productGoldenStar.svg"
+                    src="./images/productGoldenStar.svg"
                     alt="productGoldenStar"
                   />
                 </button>
                 <button>
                   <img
-                    src="/images/productGoldenStar.svg"
+                    src="./images/productGoldenStar.svg"
                     alt="productGoldenStar"
                   />
                 </button>
                 <button>
                   <img
-                    src="/images/productGoldenStar.svg"
+                    src="./images/productGoldenStar.svg"
                     alt="productGoldenStar"
                   />
                 </button>
                 <button>
                   <img
-                    src="/images/productGoldenStar.svg"
+                    src="./images/productGoldenStar.svg"
                     alt="productGoldenStar"
                   />
                 </button>
                 <button>
                   <img
-                    src="/images/productGreyStar.svg"
+                    src="./images/productGreyStar.svg"
                     alt="productGreyStar"
                   />
                 </button>
@@ -168,21 +168,21 @@ export default function Home({ cart, setCart, setOpenCart }) {
               <div className={styles.options}>
                 <img
                   style={{ border: "1px solid #542E90" }}
-                  src="/images/static/color1.png"
+                  src="./images/static/color1.png"
                   alt="color1"
                 />
-                <img src="/images/static/color2.png" alt="color2" />
+                <img src="./images/static/color2.png" alt="color2" />
               </div>
             </div>
             <div className={styles.qty}>
               <div className={styles.title}>Quantity</div>
               <div className={styles.counter}>
                 <button onClick={handleDecrement} className={styles.minus}>
-                  <img src="/images/productMinus.svg" alt="productMinus" />
+                  <img src="./images/productMinus.svg" alt="productMinus" />
                 </button>
                 <div className={styles.number}>{productCount}</div>
                 <button onClick={handleIncrement} className={styles.plus}>
-                  <img src="/images/productPlus.svg" alt="productPlus" />
+                  <img src="./images/productPlus.svg" alt="productPlus" />
                 </button>
               </div>
             </div>
@@ -204,11 +204,11 @@ export default function Home({ cart, setCart, setOpenCart }) {
               <div className={styles.imageContainer}>
                 <img
                   className={styles.image}
-                  src="/images/static/01.png"
+                  src="./images/static/01.png"
                   alt="01"
                 />
                 <button className={styles.display360}>
-                  <img src="/images/display360.svg" alt="display360" />
+                  <img src="./images/display360.svg" alt="display360" />
                 </button>
               </div>
               <div className={styles.details}>
@@ -222,38 +222,38 @@ export default function Home({ cart, setCart, setOpenCart }) {
                     <div className={styles.discount}>30% Off</div>
                   </div>
                   <div className={styles.brand}>
-                    <img src="/images/static/adidas.svg" alt="adidas" />
+                    <img src="./images/static/adidas.svg" alt="adidas" />
                   </div>
                 </div>
                 <div className={styles.rating}>
                   <div className={styles.stars}>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGreyStar.svg"
+                        src="./images/productGreyStar.svg"
                         alt="productGreyStar"
                       />
                     </button>
@@ -269,11 +269,11 @@ export default function Home({ cart, setCart, setOpenCart }) {
               <div className={styles.imageContainer}>
                 <img
                   className={styles.image}
-                  src="/images/static/02.png"
+                  src="./images/static/02.png"
                   alt="02"
                 />
                 <button className={styles.display360}>
-                  <img src="/images/display360.svg" alt="display360" />
+                  <img src="./images/display360.svg" alt="display360" />
                 </button>
               </div>
               <div className={styles.details}>
@@ -287,38 +287,38 @@ export default function Home({ cart, setCart, setOpenCart }) {
                     <div className={styles.discount}>30% Off</div>
                   </div>
                   <div className={styles.brand}>
-                    <img src="/images/static/adidas.svg" alt="adidas" />
+                    <img src="./images/static/adidas.svg" alt="adidas" />
                   </div>
                 </div>
                 <div className={styles.rating}>
                   <div className={styles.stars}>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGreyStar.svg"
+                        src="./images/productGreyStar.svg"
                         alt="productGreyStar"
                       />
                     </button>
@@ -334,11 +334,11 @@ export default function Home({ cart, setCart, setOpenCart }) {
               <div className={styles.imageContainer}>
                 <img
                   className={styles.image}
-                  src="/images/static/03.png"
+                  src="./images/static/03.png"
                   alt="03"
                 />
                 <button className={styles.display360}>
-                  <img src="/images/display360.svg" alt="display360" />
+                  <img src="./images/display360.svg" alt="display360" />
                 </button>
               </div>
               <div className={styles.details}>
@@ -352,38 +352,38 @@ export default function Home({ cart, setCart, setOpenCart }) {
                     <div className={styles.discount}>30% Off</div>
                   </div>
                   <div className={styles.brand}>
-                    <img src="/images/static/adidas.svg" alt="adidas" />
+                    <img src="./images/static/adidas.svg" alt="adidas" />
                   </div>
                 </div>
                 <div className={styles.rating}>
                   <div className={styles.stars}>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGreyStar.svg"
+                        src="./images/productGreyStar.svg"
                         alt="productGreyStar"
                       />
                     </button>
@@ -399,11 +399,11 @@ export default function Home({ cart, setCart, setOpenCart }) {
               <div className={styles.imageContainer}>
                 <img
                   className={styles.image}
-                  src="/images/static/04.png"
+                  src="./images/static/04.png"
                   alt="04"
                 />
                 <button className={styles.display360}>
-                  <img src="/images/display360.svg" alt="display360" />
+                  <img src="./images/display360.svg" alt="display360" />
                 </button>
               </div>
               <div className={styles.details}>
@@ -417,38 +417,38 @@ export default function Home({ cart, setCart, setOpenCart }) {
                     <div className={styles.discount}>30% Off</div>
                   </div>
                   <div className={styles.brand}>
-                    <img src="/images/static/adidas.svg" alt="adidas" />
+                    <img src="./images/static/adidas.svg" alt="adidas" />
                   </div>
                 </div>
                 <div className={styles.rating}>
                   <div className={styles.stars}>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGreyStar.svg"
+                        src="./images/productGreyStar.svg"
                         alt="productGreyStar"
                       />
                     </button>
@@ -464,11 +464,11 @@ export default function Home({ cart, setCart, setOpenCart }) {
               <div className={styles.imageContainer}>
                 <img
                   className={styles.image}
-                  src="/images/static/01.png"
+                  src="./images/static/01.png"
                   alt="01"
                 />
                 <button className={styles.display360}>
-                  <img src="/images/display360.svg" alt="display360" />
+                  <img src="./images/display360.svg" alt="display360" />
                 </button>
               </div>
               <div className={styles.details}>
@@ -482,38 +482,38 @@ export default function Home({ cart, setCart, setOpenCart }) {
                     <div className={styles.discount}>30% Off</div>
                   </div>
                   <div className={styles.brand}>
-                    <img src="/images/static/adidas.svg" alt="adidas" />
+                    <img src="./images/static/adidas.svg" alt="adidas" />
                   </div>
                 </div>
                 <div className={styles.rating}>
                   <div className={styles.stars}>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGoldenStar.svg"
+                        src="./images/productGoldenStar.svg"
                         alt="productGoldenStar"
                       />
                     </button>
                     <button>
                       <img
-                        src="/images/productGreyStar.svg"
+                        src="./images/productGreyStar.svg"
                         alt="productGreyStar"
                       />
                     </button>

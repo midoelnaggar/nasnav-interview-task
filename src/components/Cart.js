@@ -71,7 +71,7 @@ function Cart({ cart, setCart, openCart, setOpenCart }) {
                   onClick={() => setOpenCart(false)}
                   className={styles.closeCart}
                 >
-                  <img src="/images/closeCart.svg" alt="closeCart" />
+                  <img src="./images/closeCart.svg" alt="closeCart" />
                 </button>
               </>
              : <>
