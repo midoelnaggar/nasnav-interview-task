@@ -1,6 +1,20 @@
 import styles from "@/styles/Header.module.scss";
+import { useEffect, useState } from "react";
 
-const Header = () => {
+const Header = ({ cart, openCart, setOpenCart }) => {
+  const [cartCount, setCartCount] = useState(0);
+
+  useEffect(() => {
+    const settingCount = async () => {
+      let count = 0;
+      for (let i = 0; i < cart.length; i++) {
+        count += await cart[i].qty;
+      }
+      setCartCount(count);
+    };
+    settingCount();
+  }, [cart]);
+
   return (
     <header className={styles.header}>
       <div className={styles.top}>
@@ -43,8 +57,9 @@ const Header = () => {
           <img src="/images/static/adidas.svg" alt="adidas" />
         </div>
         <div className={styles.cartWishlistLogin}>
-          <button>
+          <button onClick={()=>setOpenCart(!openCart)}>
             <img src="/images/headerCart.svg" alt="headerCart" />
+            <span>{cartCount}</span>
             Cart
           </button>
           <button>
@@ -57,7 +72,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-        <div className={styles.bottom}>
+      <div className={styles.bottom}>
         <a href="">Men</a>
         <a href="">Women</a>
         <a href="">Unisex</a>
@@ -65,7 +80,7 @@ const Header = () => {
         <a href="">Best Sellers</a>
         <a href="">New Arrivals</a>
         <a href="">Offers</a>
-        </div>
+      </div>
     </header>
   );
 };
