@@ -17,7 +17,7 @@ export default function Home({ cart, setCart, setOpenCart }) {
 
   useEffect(() => {
     (async () => {
-      setProduct(await getProduct("10001"));
+      setProduct(await getProduct(10001));
       setTimeout(() => {
         setLoading(false);
       }, 1000); 
@@ -42,7 +42,7 @@ export default function Home({ cart, setCart, setOpenCart }) {
     if (cart.length === 0) {
       setCart([
         {
-          id: product?.id,
+          sku: product?.sku,
           name: product?.desc,
           image: product?.image,
           qty: productCount,
@@ -50,10 +50,10 @@ export default function Home({ cart, setCart, setOpenCart }) {
         },
       ]);
     } else {
-      let found = await cart.find((e) => e.id === product?.id);
+      let found = await cart.find((e) => e.sku === product?.sku);
       found.qty += productCount;
       let otherProducts = await cart.filter((e) => {
-        return e.id != product?.id;
+        return e.sku != product?.sku;
       });
       setCart([found, ...otherProducts]);
     }
@@ -166,7 +166,7 @@ export default function Home({ cart, setCart, setOpenCart }) {
                               ? { border: "1px solid #542E90" }
                               : {}
                           }
-                          src={`./images/static/${product?.id}-color-${color}.png`}
+                          src={`./images/static/${product?.sku}-color-${color}.png`}
                           alt={color}
                         />
                       );

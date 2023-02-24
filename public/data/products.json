@@ -1,6 +1,6 @@
 [
   {
-    "id": "10001",
+    "sku": "10001",
     "image": "./images/static/productImage00.png",
     "subImages": [
       "./images/static/productImage01.png",

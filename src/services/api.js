@@ -1,9 +1,9 @@
 import axios from "axios";
+const apiUrl ="http://elsalamdist.com/api"
 
-export const getProduct =async (id)=> {
-        const res = await axios.get(`./data/products.json`)
-        if (await res.data) {
-            const product = await res?.data?.filter((product)=> {return(product?.id === id)})[0]
-            return(product)
-        }
+export const getProduct =async (sku)=> {
+        const res = await axios.get(`${apiUrl}/product`,{params:{sku}})
+        console.log(await res.data)
+            return(await res.data)
+
 }

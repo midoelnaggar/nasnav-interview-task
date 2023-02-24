@@ -18,7 +18,7 @@ function Cart({ cart, setCart, openCart, setOpenCart }) {
 
   const handleRemoveItem = async (itemId) => {
     let otherProducts = await cart.filter((e) => {
-      return e.id != itemId;
+      return e.sku != itemId;
     });
     setCart([...otherProducts]);
   };
@@ -51,7 +51,7 @@ function Cart({ cart, setCart, openCart, setOpenCart }) {
                                 }{" "}
                             </div>
                             <button
-                              onClick={()=>handleRemoveItem(item?.id)}
+                              onClick={()=>handleRemoveItem(item?.sku)}
                               className={styles.remove}
                             >
                               Remove
