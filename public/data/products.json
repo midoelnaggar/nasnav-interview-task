@@ -1,0 +1,76 @@
+[
+  {
+    "id": "10001",
+    "image": "./images/static/productImage00.png",
+    "subImages": [
+      "./images/static/productImage01.png",
+      "./images/static/productImage02.png",
+      "./images/static/productImage03.png",
+      "./images/static/productImage04.png"
+    ],
+    "brand": "Adidas",
+    "brandLogo": "./images/static/adidas.svg",
+    "name": "Adidas Black T-Shirt",
+    "desc": "Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "category": "Men",
+    "rate": 4.9,
+    "totalRates": 22,
+    "price": 9999,
+    "oldPrice": 9999,
+    "discount": "30%",
+    "sizes": ["Small", "Medium", "Large", "X Large", "XX Large"],
+    "colors": ["black", "red"],
+    "similarProducts": [
+      {
+        "name": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "image": "./images/static/01.png",
+        "brandLogo": "./images/static/adidas.svg",
+        "rate": 4.9,
+        "price": 9999,
+        "oldPrice": 9999,
+        "discount": "30%",
+        "pickupFrom": "Genena Mall"
+      },
+      {
+        "name": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "image": "./images/static/02.png",
+        "brandLogo": "./images/static/adidas.svg",
+        "rate": 4.9,
+        "price": 9999,
+        "oldPrice": 9999,
+        "discount": "30%",
+        "pickupFrom": "Genena Mall"
+      },
+      {
+        "name": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "image": "./images/static/03.png",
+        "brandLogo": "./images/static/adidas.svg",
+        "rate": 4.9,
+        "price": 9999,
+        "oldPrice": 9999,
+        "discount": "30%",
+        "pickupFrom": "Genena Mall"
+      },
+      {
+        "name": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "image": "./images/static/04.png",
+        "brandLogo": "./images/static/adidas.svg",
+        "rate": 4.9,
+        "price": 9999,
+        "oldPrice": 9999,
+        "discount": "30%",
+        "pickupFrom": "Genena Mall"
+      },
+      {
+        "name": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "image": "./images/static/05.png",
+        "brandLogo": "./images/static/adidas.svg",
+        "rate": 4.9,
+        "price": 9999,
+        "oldPrice": 9999,
+        "discount": "30%",
+        "pickupFrom": "Genena Mall"
+      }
+    ]
+  }
+]

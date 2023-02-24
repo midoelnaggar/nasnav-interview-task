@@ -1,0 +1,22 @@
+.rating {
+    margin-block: 20px;
+    display: flex;
+    align-items: center;
+    .stars {
+      display: flex;
+      align-items: center;
+      button {
+        margin-inline-end: 5.5px;
+      }
+    }
+    .rate {
+      margin-inline: 16px;
+      font-size: 17px;
+      font-weight: 650;
+    }
+    .count {
+      font-size: 15px;
+      color: #575756;
+      font-weight: 650;
+    }
+  }

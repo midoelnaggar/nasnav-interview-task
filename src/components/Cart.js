@@ -1,3 +1,4 @@
+import { addComma } from "@/services.js/helpers";
 import styles from "@/styles/Cart.module.scss";
 import { useEffect, useState } from "react";
 function Cart({ cart, setCart, openCart, setOpenCart }) {
@@ -15,9 +16,9 @@ function Cart({ cart, setCart, openCart, setOpenCart }) {
     settingTotal();
   }, [cart]);
 
-  const handleRemoveItem = async () => {
+  const handleRemoveItem = async (itemId) => {
     let otherProducts = await cart.filter((e) => {
-      return e.id != "1001";
+      return e.id != itemId;
     });
     setCart([...otherProducts]);
   };
@@ -46,12 +47,11 @@ function Cart({ cart, setCart, openCart, setOpenCart }) {
                           </div>
                           <div className={styles.priceAndRemove}>
                             <div className={styles.price}>
-                              {item?.price
-                                .toString()
-                                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
+                              {addComma(item?.price)
+                                }{" "}
                             </div>
                             <button
-                              onClick={handleRemoveItem}
+                              onClick={()=>handleRemoveItem(item?.id)}
                               className={styles.remove}
                             >
                               Remove
@@ -64,7 +64,7 @@ function Cart({ cart, setCart, openCart, setOpenCart }) {
                 </div>
                 <div className={styles.total}>
                   Total:{" "}
-                  {cartTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
+                  {addComma(cartTotal)}{" "}
                   LE
                 </div>
                 <button
