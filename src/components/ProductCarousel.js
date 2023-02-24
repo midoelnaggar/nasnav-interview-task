@@ -1,6 +1,7 @@
+import styles from "@/styles/ProductCarousel.module.scss";
 import { addComma } from "@/services.js/helpers";
 
-function ProductCarousel({ similarProducts, styles }) {
+function ProductCarousel({ similarProducts }) {
   return (
     <div className={styles.carousel}>
       {similarProducts?.map((product,index) => {

@@ -121,7 +121,6 @@ export default function Home({ cart, setCart, setOpenCart }) {
                 <div className={styles.name}>{product.desc}</div>
                 <div className={styles.category}>{product?.category}</div>
                 <Ratings
-                  styles={styles}
                   rate={product?.rate}
                   totalRates={product?.totalRates}
                 />
