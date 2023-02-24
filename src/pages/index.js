@@ -2,10 +2,10 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.scss";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { useState, useEffect } from "react";
-import { getProduct } from "@/services.js/api";
+import { getProduct } from "@/services/api";
 import Ratings from "@/components/Rating";
 import ProductCarousel from "@/components/ProductCarousel";
-import { addComma } from "@/services.js/helpers";
+import { addComma } from "@/services/helpers";
 import Loading from "@/components/Loading";
 
 export default function Home({ cart, setCart, setOpenCart }) {

@@ -1,5 +1,5 @@
 import styles from "@/styles/ProductCarousel.module.scss";
-import { addComma } from "@/services.js/helpers";
+import { addComma } from "@/services/helpers";
 
 function ProductCarousel({ similarProducts }) {
   return (

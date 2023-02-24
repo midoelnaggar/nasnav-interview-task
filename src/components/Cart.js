@@ -1,4 +1,4 @@
-import { addComma } from "@/services.js/helpers";
+import { addComma } from "@/services/helpers";
 import styles from "@/styles/Cart.module.scss";
 import { useEffect, useState } from "react";
 function Cart({ cart, setCart, openCart, setOpenCart }) {
