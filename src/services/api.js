@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiUrl ="http://elsalamdist.com/api"
+const apiUrl ="https://elsalamdist.com/api"
 
 export const getProduct =async (sku)=> {
         const res = await axios.get(`${apiUrl}/product`,{params:{sku}})
