@@ -3,9 +3,9 @@ import { addComma } from "@/services.js/helpers";
 function ProductCarousel({ similarProducts, styles }) {
   return (
     <div className={styles.carousel}>
-      {similarProducts?.map((product) => {
+      {similarProducts?.map((product,index) => {
         return (
-          <div className={styles.card}>
+          <div key={index} className={styles.card}>
             <div className={styles.imageContainer}>
               <img
                 className={styles.image}

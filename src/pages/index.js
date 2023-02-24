@@ -140,6 +140,7 @@ export default function Home({ cart, setCart, setOpenCart }) {
                     {product?.sizes?.map((size, index) => {
                       return (
                         <button
+                        key={index}
                           style={
                             index === selectedSize
                               ? { backgroundColor: "#ECECEC", color: "#1D1D1B" }
